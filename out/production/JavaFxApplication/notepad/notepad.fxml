@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notepad.Controller">
+   <children>
+      <AnchorPane prefHeight="582.0" prefWidth="1090.0">
+         <children>
+            <BorderPane layoutX="5.0" layoutY="7.0" prefHeight="565.0" prefWidth="1080.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="7.0">
+               <top>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="160.0" text="New Document" />
+                        <Button mnemonicParsing="false" prefHeight="86.0" prefWidth="155.0" text="Open" />
+                        <Button mnemonicParsing="false" prefHeight="86.0" prefWidth="155.0" text="Save">
+                           <padding>
+                              <Insets left="6.0" right="6.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <ComboBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="86.0" prefWidth="183.0" promptText="Encoding" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="15.0" />
+                     </opaqueInsets>
+                     <BorderPane.margin>
+                        <Insets left="3.0" right="6.0" top="3.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </top>
+               <left>
+                  <VBox prefHeight="456.0" prefWidth="163.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ListView prefHeight="462.0" prefWidth="163.0" />
+                     </children></VBox>
+               </left>
+               <padding>
+                  <Insets bottom="3.0" left="6.0" right="3.0" top="3.0" />
+               </padding>
+               <center>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
